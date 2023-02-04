@@ -1,0 +1,50 @@
+/*FORMATTAZIONE GENERALE*/
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+body{
+    background-image: url(../img/background.jpg);
+    text-align: center;
+}
+.container{
+    margin: auto;
+    padding: 30px;
+    width: 35%;
+    width: 500px;
+}
+@media only screen and (min-width: 961px){
+    .tutorial-mobile{
+        display: none;
+    }
+    .container{
+        border: 3px solid black;
+    }
+}
+.tutorial-desktop{
+    font-size: large;
+}
+.contatore{
+    font-size: 100px;
+}
+button{
+    margin: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20%;
+}
+button:active{
+    box-shadow: 0 2px gray;
+    transform: translateY(2px);
+}
+
+@media only screen and (max-width: 459px){
+    .tutorial-desktop{
+        display: none;
+    }
+}
+@media only screen and (min-width: 460px) and (max-width: 960px){
+    .tutorial-desktop{
+        display: none;
+    }
+}
