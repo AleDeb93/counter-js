@@ -10,6 +10,6 @@ L'applicazione è molto semplice, a schermo abbiamo un titolo, il numero visuali
 
 Essendo un progetto di modeste dimensioni lo script è implementato direttamente in index.html, non ho ritenuto necessario costruire un file js esterno anche se, all'interno della cartella principale, è presente la sottocartella js, predisposta in caso di future implementazioni!
 
-L'applicazione può essere provata al sito: 
+L'applicazione può essere provata al sito: https://contatore-js-adb.netlify.app/
 
 Il progetto è stato sviluppato utilizzando HTML e CSS per contenuti e design della pagina, mentre JavaScript per l'implementazione del numero a schermo, del richiamo onclick dei bottoni e per la modifica del valore stampato sulla base delle scelte dell'utente!
