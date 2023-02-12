@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: monospace;
 }
+body{
+    color: #003566;
+    background-color: #D1E3DD;
+}
 .menu{
     display: flex;
     justify-content: space-around;
@@ -69,12 +73,17 @@ p{
     flex-wrap: wrap;
     font-size: large;
 }
-.footer a:link, a:visited{
+.f1 a:link, a:visited,
+.f2 a:link, a:visited{
     color: #ffd60a;
     text-decoration: none;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-.footer a:hover{
+.f1 a:hover{
+    box-shadow: inset 220px 0 0 0 #ffd60a;
+    color: #003566;
+}
+.f2 a:hover{
     box-shadow: inset 100px 0 0 0 #ffd60a;
     color: #003566;
 }
