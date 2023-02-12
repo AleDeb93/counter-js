@@ -6,20 +6,20 @@ class Bottoni{
         this._elem = elem;
         elem.onclick = this.onClick.bind(this);
     }
-    
     piu() {
       n++;
       contatore.textContent = n;
     }
+
     reset() {
       n=0;
       contatore.textContent = n;
     }
+
     meno() {
       n--;
       contatore.textContent=n;
     }
-    
     onClick(event) {
       let action = event.target.dataset.action;
       if (action) {
