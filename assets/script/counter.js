@@ -1,31 +1,52 @@
-let n = document.getElementById("contatore").textContent;
-document.getElementById("contatore").style.fontSize="100px";
+let counter = 0;
 
-class Bottoni{
-    constructor(elem){
-        this._elem = elem;
-        elem.onclick = this.onClick.bind(this);
-    }
-    piu() {
-      n++;
-      contatore.textContent = n;
-    }
+let applicazione = document.createElement("div");
+applicazione.className = "applicazione";
+document.body.appendChild(applicazione);
 
-    reset() {
-      n=0;
-      contatore.textContent = n;
-    }
+let contatore = document.createElement("div");
+contatore.innerHTML = counter;
+contatore.className = "contatore";
+applicazione.appendChild(contatore);
 
-    meno() {
-      n--;
-      contatore.textContent=n;
-    }
-    onClick(event) {
-      let action = event.target.dataset.action;
-      if (action) {
-        this[action]();
-      }
-    };
-}
+let bottoni = document.createElement("div");
+bottoni.className = "bottoni";
+applicazione.appendChild(bottoni);
 
-new Bottoni(bottoni);
+let piu = document.createElement("button");
+piu.innerHTML = "+";
+piu.setAttribute("data-action", "piu");
+bottoni.appendChild(piu);;
+
+let reset = document.createElement("button");
+reset.innerHTML = "Reset";
+reset.setAttribute("data-action", "reset");
+bottoni.appendChild(reset);
+
+let meno = document.createElement("button");
+meno.innerHTML = "-";
+meno.setAttribute("data-action", "meno");
+bottoni.appendChild(meno);
+
+applicazione.addEventListener("click", function(event) {
+  if (event.target.tagName === "BUTTON") {
+    let action = event.target.getAttribute("data-action");
+    switch (action) {
+      case "piu":
+        counter++;
+        break;
+      case "meno":
+        counter--;
+        break;
+      case "reset":
+        counter = 0;
+        break;
+    }
+    contatore.innerHTML = counter;
+  }
+});
+
+let istruzioni = document.createElement("div");
+istruzioni.className = "istruzioni";
+istruzioni.innerHTML = "Premi i pulsanti più e meno per aumentare o diminuire il valore del contatore <br> Premi il pulsante reset per far tornare il contatore a zero";
+document.body.appendChild(istruzioni);
