@@ -44,7 +44,7 @@ applicazione.addEventListener("click", function(event) {
     }
     contatore.innerHTML = counter;
   }
-});
+}); 
 
 let istruzioni = document.createElement("div");
 istruzioni.className = "istruzioni";
