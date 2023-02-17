@@ -48,6 +48,10 @@ applicazione.addEventListener("click", function(event) {
     alert("Ci stai prendendo gusto?")
     } else if(counter === -20){
     alert("Ci stai prendendo gusto?")
+    } else if(counter === 40){
+    alert("Fermati! Dai tregua al tuo povero mouse!")
+    } else if(counter === -40){
+    alert("Fermati! Dai tregua al tuo povero mouse!")
     }
     
   }
