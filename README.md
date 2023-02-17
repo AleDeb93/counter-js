@@ -9,4 +9,6 @@ L'applicazione è molto semplice, a schermo vengono inviati un contatore che par
 
 Il file index.html è il file principale contenente le fondamenta HTML del progetto, ovvero header e footer, nella cartella assets sono presenti tre sottocartelle, css (contenente appunto il foglio di stile in css) img (contenente tutte le immagini utilizzate) e script (contenente gli script.js utilizzati per la creazione del contatore e dei bottoni e ovviamente la funzione per il funzionamento del contatore)
 
+Nel file js sono presenti anche un paio di messaggi "simpatici" nel caso si faccia un "sovrautilizzo" del contatore sostituendolo ad un antistress!
+
 L'applicazione può essere provata al sito: https://contatore-js-adb.netlify.app/
