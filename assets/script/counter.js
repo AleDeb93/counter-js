@@ -44,7 +44,11 @@ applicazione.addEventListener("click", function(event) {
     }
     contatore.innerHTML = counter;
     if(counter === 20){
-    alert("Ci stai prendendo gusto?")
+      alert("Ci stai prendendo gusto?")
+    } else if (counter === -20){
+      alert("Ci stai prendendo gusto?)
+    } else if(counter === 50){
+        alert("Fermati! Stai stressando il tuo mouse!")
     }
   }
 });
