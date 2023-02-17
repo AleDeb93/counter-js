@@ -43,11 +43,6 @@ applicazione.addEventListener("click", function(event) {
         break;
     }
     contatore.innerHTML = counter;
-    if(counter === 20){
-      alert("Ci stai prendendo gusto?")
-    } else if (counter === -20){
-      alert("Ci stai prendendo gusto?)
-    }
   }
 });
 
