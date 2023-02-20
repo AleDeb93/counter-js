@@ -60,6 +60,11 @@ button:active{
     align-items: center;
     font-size: xx-large;
 }
+@media only screen and (max-width: 600px){
+    .istruzioni{
+        font-size: medium;
+    }
+}
 p{
     padding: 8px;
 }
