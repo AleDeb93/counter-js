@@ -58,11 +58,11 @@ button:active{
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 @media only screen and (max-width: 600px){
     .istruzioni{
-        font-size: medium;
+        font-size: 20px;
     }
 }
 p{
