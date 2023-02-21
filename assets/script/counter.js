@@ -17,7 +17,7 @@ function createElement(tagName, classNames, innerHTML, dataAction) {
   const applicazione = createElement("div", "applicazione");
   document.body.appendChild(applicazione);
   
-  const contatore = createElement("div", "contatore", counter);
+  const contatore = createElement("div", "contatore");
   applicazione.appendChild(contatore);
 
   const bottoni = createElement("div", "bottoni");
