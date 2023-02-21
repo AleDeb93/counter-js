@@ -44,14 +44,10 @@ applicazione.addEventListener("click", function(event) {
     }
     contatore.innerHTML = counter;
     
-    if(counter === 20){
-    alert("Ci stai prendendo gusto?")
-    } else if(counter === -20){
-    alert("Ci stai prendendo gusto?")
-    } else if(counter === 40){
-    alert("Fermati! Dai tregua al tuo povero mouse!")
-    } else if(counter === -40){
-    alert("Fermati! Dai tregua al tuo povero mouse!")
+    if(counter === 20 || counter === -20){
+    alert("Ci stai prendendo gusto?");
+    } else if(counter === 40 || counter === -40){
+    alert("Fermati! Dai tregua al tuo povero mouse!");
     }
     
   }
