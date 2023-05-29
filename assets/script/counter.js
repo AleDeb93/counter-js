@@ -56,7 +56,7 @@ function createElement(tagName, classNames, innerHTML, dataAction) {
         Swal.fire("Ci stai prendendo gusto non è vero??");
       }
       if(counter === 40 || counter === -40){
-        Swal.fire("Fermati!! Stai distruggendo il tuo povero mouse!");
+        Swal.fire(icon: "warning", text: "Fermati!! Stai distruggendo il tuo povero mouse!");
       }
     }
   });
