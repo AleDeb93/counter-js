@@ -53,10 +53,10 @@ function createElement(tagName, classNames, innerHTML, dataAction) {
       contatore.innerHTML = counter;
 
       if(counter === 20 || counter === -20){
-        alert("Ci stai prendendo gusto non è vero??");
+        Swal.fire("Ci stai prendendo gusto non è vero??");
       }
       if(counter === 40 || counter === -40){
-        alert("Fermati!! Stai distruggendo il tuo povero mouse!");
+        Swal.fire("Fermati!! Stai distruggendo il tuo povero mouse!");
       }
     }
   });
